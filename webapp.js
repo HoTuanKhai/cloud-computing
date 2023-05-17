@@ -1,5 +1,6 @@
 const http = require("http");
 const hostname = "localhost";
+const dt = require("./mymodule");
 const port = 3000;
 const server = http.createServer((req, res) => {
 res.statusCode = 200;
@@ -11,7 +12,7 @@ res.end("<h1>This is Home page</h1>");
 break;
 case "/about":
 res.writeHead(200);
-res.end("<h1>This is About page</h1>");
+res.end(`<h1>This is About page ${dt.calc(10,100,"+")}</h1>`);
 break;
 default:
 break;
