@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "json": "^11.0.0",
+    "json2html": "^0.0.8",
+    "mongoose": "^7.2.2",
+    "node-json2html": "^2.2.3",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2"
+  },
+  "name": "myfirstweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   }
 }

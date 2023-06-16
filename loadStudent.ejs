@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table id="loadtbl" style="width: 30%">
+        <tr id="headrow"><td></td></tr>
+    </table>
+    <p id="demo"></p>
+    <script>
+        var headers = ["Header 1", "Header 2", "Header 3"];
+        var txtHeaders = "";
+        console.log(<% headers %>[0]);
+        for (let h in <% headers %>){
+            txtHeaders += '<th>' + <% headers %>[h] + '</th>';
+        }
+        document.getElementById("headrow").innerHTML = txtHeaders;
+    </script>
+</body>
+</html>
